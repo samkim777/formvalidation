@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <label for="mail">
+            <p>* Please enter an email address</p>
+            <input type="email" id="mail" name="mail" required>
+        </label>
+        <label for="country">
+            <p>* Please enter a country</p>
+            <input type="text" id="country" name="country" required>
+        </label>
+        <label for="zipcode">
+            <p>Please enter a zipcode</p>
+            <input type="text" id="zipcode" name="zipcode" required minlength="6" maxlength="6">
+        </label>
+        <label for="password">
+            <p>* Please enter a Password</p>
+            <input type="password" id="userpassword" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </label>
+        <label for="confirmPassword">
+            <p>* Please Confirm your password</p>
+            <input type="password" id="confirmPassword" name="confirmPassword" required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </label>
+        <button>Submit Form</button>
+    </form>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+</body>
+
+</html>
